@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media query</title>
+    <!-- digunakan agar websitenya responsif dan bisa dibuka di device mana aja -->
+    <style>
+      .container {
+        text-align: center;
+        padding: 50px;
+        border: 1px solid red;
+      }
+
+      /* mobile device */
+      @media (max-width: 480px) {
+        .container {
+          background-color: blue;
+        }
+      }
+
+      /* tablet */
+      @media (min-width: 481px) and (max-width: 768px) {
+        .container {
+          background-color: chocolate;
+        }
+      }
+
+      /* Desktop */
+      @media (min-width: 769px) {
+        .container {
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Responsive Media Query</h1>
+    </div>
+  </body>
+</html>
